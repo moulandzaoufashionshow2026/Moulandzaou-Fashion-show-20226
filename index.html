@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Moulandzaou — Défilé de Mode</title>
+
+    <meta name="description"
+          content="Obtenez votre invitation pour le défilé de mode Moulandzaou.">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- QR CODE -->
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+</head>
+
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="logos">
+
+            <div class="logo-text">
+                MOULANDZAOU
+            </div>
+
+            <div class="separator"></div>
+
+            <div class="logo-text">
+                KAY ÑU AÏDÉ
+            </div>
+
+        </div>
+
+        <a href="#invitation" class="header-button">
+            INVITATION
+        </a>
+
+    </header>
+
+
+    <!-- ================= CONTENU ================= -->
+
+    <main>
+
+        <!-- ================= HERO ================= -->
+
+        <section class="hero">
+
+            <div class="hero-image">
+
+                <img
+                    src="910b0d80524e8fc173611d0113e6af76.PNG"
+                    alt="Affiche du défilé de mode Moulandzaou">
+
+            </div>
+
+
+            <div class="hero-content">
+
+                <p class="red-label">
+                    THE RUNWAY CALLING !!
+                </p>
+
+                <h1>
+                    DÉFILÉ
+                    <span>DE MODE</span>
+                </h1>
+
+                <p class="hero-description">
+                    « Venez célébrer l’élégance et la créativité au Défilé <strong>Moulandzaou</strong>, le rendez-vous incontournable de la mode ! »
+                </p>
+
+
+                <a
+                    href="#invitation"
+                    class="main-button">
+
+                    OBTENIR MON INVITATION
+
+                    <span>→</span>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= EVENT ================= -->
+
+        <section class="event">
+
+            <div class="event-title">
+
+                <div class="event-logos">
+
+                    <img
+                        src="910b0d80524e8fc173611d0113e6af76.PNG"
+                        alt="Logo Moulandzaou">
+
+                    <img
+                        src="image00002 2.png"
+                        alt="Logo Kay Ñu Daajé">
+
+                </div>
+
+
+                <h2>
+                    Un rendez-vous<br>
+                    <span>à ne pas manquer.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="event-details">
+
+                <div class="detail">
+
+                    <span>DATE</span>
+
+                    <strong>
+                        Vendredi
+                        <br>
+                        25 Septembre
+                    </strong>
+
+                </div>
+
+
+                <div class="detail">
+
+                    <span>HEURE</span>
+
+                    <strong>
+                        19H30
+                    </strong>
+
+                </div>
+
+
+                <div class="detail">
+
+                    <span>LIEU</span>
+
+                    <strong>
+                        Espace VEMA
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FORMULAIRE ================= -->
+
+        <section
+            class="invitation-section"
+            id="invitation">
+
+            <div class="form-container">
+
+                <p class="red-label">
+                    INVITATION
+                </p>
+
+                <h2>
+                    Réservez votre
+                    <span>place.</span>
+                </h2>
+
+                <p class="form-description">
+                    Remplissez vos informations
+                    pour recevoir votre carte
+                    d'invitation personnelle.
+                </p>
+
+
+                <form id="invitationForm">
+
+                    <!-- PRÉNOM -->
+
+                    <div class="field">
+
+                        <label for="prenom">
+                            PRÉNOM
+                        </label>
+
+                        <input
+                            type="text"
+                            id="prenom"
+                            placeholder="Votre prénom"
+                            required>
+
+                    </div>
+
+
+                    <!-- NOM -->
+
+                    <div class="field">
+
+                        <label for="nom">
+                            NOM
+                        </label>
+
+                        <input
+                            type="text"
+                            id="nom"
+                            placeholder="Votre nom"
+                            required>
+
+                    </div>
+
+
+                    <!-- TÉLÉPHONE -->
+
+                    <div class="field">
+
+                        <label for="telephone">
+                            TÉLÉPHONE
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="telephone"
+                            placeholder="Votre numéro"
+                            required>
+
+                    </div>
+
+
+                    <!-- EMAIL -->
+
+                    <div class="field">
+
+                        <label for="email">
+                            E-MAIL
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="votre@email.com"
+                            required>
+
+                    </div>
+
+
+                    <!-- BOUTON -->
+
+                    <button
+                        type="submit"
+                        class="submit-button">
+
+                        CONFIRMER MA PRÉSENCE
+
+                    </button>
+
+                </form>
+                <div class="already-invited">
+
+    <p>
+        Vous avez déjà une invitation ?
+    </p>
+
+    <button
+        type="button"
+        id="findInvitation">
+
+        RETROUVER MON INVITATION
+
+    </button>
+
+    <div
+        id="findInvitationBox"
+        style="display: none;">
+
+        <input
+            type="email"
+            id="searchEmail"
+            placeholder="Votre e-mail">
+
+        <button
+            type="button"
+            id="searchInvitation">
+
+            RETROUVER
+
+        </button>
+
+    </div>
+
+</div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             TICKET D'INVITATION OFFICIEL
+        ================================================= -->
+
+        <section
+            class="invitation-result"
+            id="invitationResult"
+            style="display: none;">
+
+            <div class="real-ticket">
+
+                <!-- IMAGE OFFICIELLE -->
+
+                <img
+                    src="Invitation1.png"
+                    alt="Invitation officielle Moulandzaou"
+                    class="ticket-background">
+
+
+                <!-- NOM DE L'INVITÉ -->
+
+                <div
+                    id="guestName"
+                    class="ticket-guest-name">
+
+                    NOM PRÉNOM
+
+                </div>
+
+
+                <!-- EMAIL -->
+
+                <div
+                    id="guestEmail"
+                    class="ticket-guest-email">
+
+                </div>
+
+
+                <!-- QR CODE -->
+
+                <div class="ticket-qr">
+
+                    <div id="qrcode"></div>
+
+                </div>
+
+
+                <!-- ID CACHÉ -->
+
+                <div
+                    id="invitationId"
+                    class="ticket-id">
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+            MOULANDZAOU
+        </div>
+
+        <p>
+            THE RUNWAY CALLING !!
+        </p>
+
+        <span>
+            ©️ 2026 — Tous droits réservés
+        </span>
+
+    </footer>
+
+
+    <!-- SCRIPT -->
+
+    <script
+        type="module"
+        src="script.js">
+    </script>
+
+</body>
+
+</html>
